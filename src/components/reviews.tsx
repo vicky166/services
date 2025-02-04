@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Star } from "lucide-react"
-import { PhoneIcon as WhatsappIcon } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Star } from "lucide-react";
+import { PhoneIcon as WhatsappIcon } from "lucide-react";
 
 export default function Reviews() {
   const reviews = [
@@ -20,13 +20,15 @@ export default function Reviews() {
       text: "The CO2 laser resurfacing treatment I received at a Nexus clinic was highly effective. It significantly reduced my acne scars, and my skin felt rejuvenated.",
       rating: 5,
     },
-  ]
+  ];
 
   return (
-    <div className="container mx-auto px-4 py-8 relative">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Client`&apos;`s Reviews</h1>
+    <div className="container mx-auto mb-20 px-4 md:px-8 lg:px-24 py-8 relative">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        Our Client&apos;s Reviews
+      </h1>
 
-      <div className="grid md:grid-cols-3 gap-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {reviews.map((review, index) => (
           <Card key={index} className="border border-gray-100">
             <CardContent className="p-6 space-y-8 text-lg">
@@ -34,7 +36,10 @@ export default function Reviews() {
               <p className="text-gray-600 text-start">{review.text}</p>
               <div className="flex justify-start">
                 {[...Array(review.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-[#2F4F4F] text-[#2F4F4F]" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 fill-[#2F4F4F] text-[#2F4F4F]"
+                  />
                 ))}
               </div>
             </CardContent>
@@ -48,17 +53,9 @@ export default function Reviews() {
         </Button>
       </div>
 
-      {/* Floating WhatsApp Button */}
       <div className="fixed bottom-6 right-6 z-50">
-        <Button className="bg-white text-gray-700 shadow-lg hover:bg-gray-100 flex items-center gap-2 pr-4">
-          <WhatsappIcon className="w-6 h-6 text-green-500" />
-          <span className="text-sm">Claim RM100 Voucher</span>
-          <span className="bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center absolute -top-2 -right-2">   
-            
-          </span>
-        </Button>
+       
       </div>
     </div>
-  )
+  );
 }
-

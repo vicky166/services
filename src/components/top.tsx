@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 export function Top() {
   return (
     <div className="w-full">
-      {/* Top Banner */}
       <div className="w-full bg-[#00FF7F] py-2 px-4 text-center">
         <div className="container mx-auto flex items-center justify-center gap-2">
           <span>Need advice? Chat with the doctor now!</span>
@@ -14,6 +13,6 @@ export function Top() {
           </Button>
         </div>
       </div>
-    </div> // ✅ Properly closed div
+    </div> 
   )
 }

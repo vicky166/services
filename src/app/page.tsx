@@ -1,6 +1,10 @@
 import BeforeAfter from "@/components/before_after";
+import BlogSection from "@/components/blog";
+import DoctorsSection from "@/components/doctors";
 import FAQ from "@/components/faq";
+import Footer from "@/components/footer";
 import Form from "@/components/form";
+import GoogleReviews from "@/components/google";
 // import Google from "@/components/google";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -24,7 +28,10 @@ export default function Home() {
     <Reviews/>
     <FAQ/>
     <Form/>
-    
+    <GoogleReviews/>
+    <DoctorsSection/>
+    <BlogSection/>
+    <Footer/>
     </>
   );
 }

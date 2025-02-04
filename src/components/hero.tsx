@@ -1,12 +1,11 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 
 export default function LaserTreatmentPage() {
   return (
     <div className="min-h-screen">
-      {/* Breadcrumb */}
       <nav className="p-4 text-sm">
         <div className="flex items-center gap-2">
           <Link href="/" className="text-blue-500 hover:underline">
@@ -25,11 +24,10 @@ export default function LaserTreatmentPage() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <div
         className="relative min-h-[80vh] flex flex-col items-center justify-center text-center p-6"
         style={{
-            backgroundImage:
+          backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/girl.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "top",
@@ -39,20 +37,25 @@ export default function LaserTreatmentPage() {
           Expert Fractional Laser Treatments in Kuala Lumpur, Malaysia
         </h1>
         <p className="text-xl text-white mb-8 max-w-3xl">
-          Fractional CO2 Laser Treatment reduces fine lines, wrinkles, sun damage, traumatic scars, and other
-          skin-related issues.
+          Fractional CO2 Laser Treatment reduces fine lines, wrinkles, sun
+          damage, traumatic scars, and other skin-related issues.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-12">
-          <Button size="lg" className="bg-[#2F5649] hover:bg-[#2F5649]/90 text-white px-8 py-6 text-lg">
+          <Button
+            size="lg"
+            className="bg-[#2F5649] hover:bg-[#2F5649]/90 text-white px-8 py-6 text-lg"
+          >
             Book an Appointment
           </Button>
-          <Button size="lg" className="bg-[#2F5649] hover:bg-[#2F5649]/90 text-white px-8 py-6 text-lg">
+          <Button
+            size="lg"
+            className="bg-[#2F5649] hover:bg-[#2F5649]/90 text-white px-8 py-6 text-lg"
+          >
             Get in Touch
           </Button>
         </div>
 
-        {/* Stats Card */}
         <Card className="absolute -bottom-12 bg-gradient-to-r from-[#3498db] to-[#2ecc71] text-white p-6 rounded-xl flex items-center gap-4 shadow-lg">
           <div className="rounded-full bg-white/20 p-2">
             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
@@ -61,11 +64,12 @@ export default function LaserTreatmentPage() {
           </div>
           <div>
             <span className="text-3xl font-bold">449</span>
-            <p className="text-lg">Satisfied clients have chosen this treatment.</p>
+            <p className="text-lg">
+              Satisfied clients have chosen this treatment.
+            </p>
           </div>
         </Card>
       </div>
     </div>
-  )
+  );
 }
-
