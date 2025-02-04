@@ -49,7 +49,7 @@ export default function Footer() {
             and advanced laser treatments.
           </p>
           <p className="max-w-2xl text-gray-300 text-sm leading-relaxed">
-            Nexus Clinic is dedicated to serve our clients' needs by providing
+            Nexus Clinic is dedicated to serve our clients needs by providing
             confidential, professional and personalized aesthetic services to
             both local and regional market.
           </p>

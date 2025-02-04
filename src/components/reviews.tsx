@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
-import { PhoneIcon as WhatsappIcon } from "lucide-react";
 
 export default function Reviews() {
   const reviews = [
